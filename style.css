@@ -1,0 +1,507 @@
+@charset "utf-8";
+/* CSS */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(10, 5, 2, 0.96);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+#main {
+    width: 100%;
+    height: 120vh;
+    box-sizing: border-box;
+    background-color: rgba(26, 13, 6, 0.92);
+    position:relative;
+
+    background-size: cover;
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-image: url(images/profile.JPG);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: rgba(34, 26, 19, 0.7);
+    box-shadow: 2px 2px 12px rgb(26, 13, 6);
+    z-index: 1;
+}
+.menu {
+    display: flex;
+}
+.menu li a {
+    padding: 10px 15px;
+    color: #f4ecca;
+    font-size: 12px;
+
+}
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #f4ecca;
+    text-shadow: 1px 1px 12px rgb(236, 167, 42);
+    font-family: serif;
+}
+.menu li a:hover {
+    color: #eca72a; !important;
+    text-shadow: 2px 2px 12px #eca72a;
+    font-weight: 700;
+    transition: all ease 0.4s;
+}
+.introduction{
+    font-family: sans-serif;
+    width: 550px;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    transform: translate(-10%,-70%);
+}
+.details{
+    font-family: serif;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 14px rgba(26, 13, 6, 0.92);
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.introduction h1{
+    font-family: serif;
+    color: rgb(26, 13, 6);
+    text-shadow: 1px 1px 12px rgb(241, 196, 117);
+    font-size: 40px;
+    margin:0;
+    letter-spacing: 3px;
+}
+.cv-btn{
+    width: 400px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: rgba(26, 13, 6, 0.92);
+    box-shadow: 2px 2px 12px rgba(26, 13, 6, 0.92);
+}
+.cv-btn:hover{
+    width: 400px;
+    color: #ffffff;
+    background-color: #eca72a;
+    box-shadow: 2px 2px 12px #eca72a;
+    transition: all ease 0.5s;
+}
+.white-line {
+    align-self: end;
+    width: 50%;
+    height: 15%;
+    margin-bottom: 4em;
+    position: absolute;
+    bottom:0;
+    left: 40%;
+    border-right: 3px solid rgb(255, 255, 255);
+}
+.white-line::after{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 9px 0 9px;
+    border-color:  #ffffff transparent transparent transparent;
+    right: -.7em;
+    bottom: -2px;
+}
+.social{
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+    display: flex;
+}
+.social a{
+margin: 15px 20px;
+}
+.social i{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+}
+.social a:hover i{
+    color: #eca72a;
+    transition: all ease 0.5s;
+}
+
+#about{
+    width:100%;
+    height: 100vh;
+    background-image: url(images/brown.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 5% 0 5%;
+    position: relative;
+}
+.about-text{
+    font-family: serif;
+    width: 90%;
+}
+.about-text h1{
+    font-size: 5rem;
+    color: rgb(124, 87, 26);
+}
+.about-text h2{
+    font-family: sans-serif;
+    font-size: 3rem;
+    color:#FFFFFF;
+    font-weight: 400;
+    text-shadow: 2px 2px 12px #eca72a;
+}
+.about-text h1,h2{
+    margin: 0;
+    padding: 0;
+}
+.about-text p{
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+}
+
+#projects{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    font-family: calibri, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px ;
+    background-image: url(images/project_b.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.s-heading h1 a{
+    text-shadow: 2px 2px 12px #eca72a;
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+
+}
+.s-heading h1 a:hover{
+    text-shadow: 2px 2px 12px #eca72a;
+    font-family: sans-serif;
+    color: #eca72a;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+
+}
+.s-heading p{
+    text-shadow: 2px 2px 12px #eca72a;
+    font-family: sans-serif;
+    color:#eca72a;
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+
+}
+.s-heading{
+    text-align: center;
+    margin: 20px 0;
+}
+.s-box{
+    background-color: rgba(34, 26, 19, 0.7);
+    width:300px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+.b-container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.s-b-img{
+    width: 100%;
+    height: 50%;
+
+}
+.s-b-img img{
+    width:100%;
+    height: 100%;
+
+}
+.s-b-text{
+    width: 100%;
+    height: 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.s-b-text a{
+    margin: 0;
+    color:#FFFFFF;
+    font-size: 0.8rem;
+    font-family: serif;
+    display: block;
+    display: -webkit-box;
+    max-width: 90%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.s-type{
+    font-family: sans-serif;
+    color:#FFFFFF;
+    background-color: rgba(34, 26, 19, 0.7);
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+}
+.project-btn{
+    width: 300px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    background-color: rgb(22, 16, 14);
+}
+.project-btn:hover{
+    background-color: #eca72a;
+    box-shadow: 2px 2px 12px #eca72a;
+    transition: all ease 0.5s;
+}
+.s-box:hover{
+    transform:translateY(-15px);
+    transition: all ease 0.3s;
+    box-shadow: 2px 2px 12px #eca72a;
+}
+
+#portfolio{
+    width:100%;
+    height:100vh;
+    box-sizing: border-box;
+    font-family: calibri, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 2% 20px 2%;
+    background-image: url(images/project_b.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.p-heading{
+    text-shadow: 2px 2px 12px #eca72a;
+    font-family: sans-serif;
+    color:#FFFFFF;
+    font-size: 3rem;
+    margin: 0;
+    padding: 40px;
+}
+.p-box{
+
+    background-color: #1F1F1F;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0,0,0,0.3);
+    position: relative;
+
+}
+.p-box img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.p-container{
+    width: 90%;
+    height:70vh;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+}
+.overlay-text{
+    font-family: calibri, serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(236, 167, 42, 0.55);
+    display:none;
+
+}
+.overlay-text h1,p{
+    color: #FFFFFF;
+}
+.overlay-text h1{
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 2px;
+
+}
+.overlay-text p{
+    font-size: 1.2rem;
+    margin: 0;
+
+
+}
+.p-box:hover .overlay-text{
+    display: flex;
+}
+
+#contact-form{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/brown.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#contact-form form{
+    display: flex;
+    width: 70%;
+    height: 70vh;
+    background-color: rgba(34, 26, 19, 0.7);
+    box-shadow: 2px 12px 20px rgb(236, 167, 42);
+    border: 1px solid rgba(255,255,255,0.01)
+}
+
+
+.contact-left{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-right{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255,255,255,0.08);
+}
+.contact-right button{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(34, 26, 19, 0.7);
+    font-weight: bold;
+    outline: none;
+    border: none;
+    margin: 0;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+.c-l-heading{
+    font-family: calibri, serif;
+    color:#FFFFFF;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-shadow: 2px 2px 12px rgba(26, 13, 6, 0.92);
+}
+.f-name,.f-email{
+    display: flex;
+    flex-direction: column;
+    font-family: calibri, serif;
+
+}
+.f-name font,.f-email font{
+    color:#BFBFBF;
+    font-size: 22px;
+}
+.f-name input,.f-email input{
+    height: 30px;
+    width:250px;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    border-bottom: 1px solid #929292;
+    color:#FFFFFF;
+    margin: 10px 0;
+}
+.f-email input::placeholder,
+.f-name input::placeholder{
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+.f-email input:focus,
+.f-name input:focus{
+    text-shadow: 2px 2px 12px #eca72a;
+    border-bottom: 1px solid #eca72a;
+    transition: all ease 0.5s;
+
+}.message font{
+     font-size: 18px;
+     color:#4E4E4E;
+     font-family: calibri, serif;
+
+ }
+.message{
+    margin: 20px;
+}
+.contact-right textarea{
+    width: 100% !important;
+    height: 320px !important;
+    border: none;
+    outline: none;
+    background-color:transparent;
+    box-sizing: border-box;
+    color:#EBEBEB;
+    font-size: 16px;
+}
+.contact-right textarea::placeholder{
+    color:#EBEBEB;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: calibri, serif;
+}
+.contact-right button:active{
+    box-shadow: 2px 2px 12px #eca72a;
+    color: #eca72a;
+    transform: scale(1.04);
+    transition: all ease 0.2s;
+
+}
