@@ -11,7 +11,9 @@ $headers = "From: $email_from \r\n";
 
 mail($to,$email_subject,$email_body,$headers);
 
-header('Location: index.html');
-exit();
+print_r($to);
+print_r($email_subject);
+print_r($email_body);
+print_r($headers);
 
 
