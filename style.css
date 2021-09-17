@@ -525,7 +525,7 @@ margin: 15px 20px;
         flex-wrap: wrap;
     }
     .s-box{
-        height: 350px;
+        height: 150px;
         flex-grow: 1;
     }
 
@@ -536,6 +536,8 @@ margin: 15px 20px;
 
     .s-b-img img{
         object-fit:cover;
+        height: 80%;
+
     }
     #contact-form form{
         width:95% !important;
@@ -695,6 +697,10 @@ margin: 15px 20px;
 }
 
 @media(max-width:600px){
+    .about-text h1,.about-text h2,.about-text p{
+        font-size: 20px;
+    }
+
     .p-container{
         grid-template-columns:1fr ;
         grid-template-rows: auto;
